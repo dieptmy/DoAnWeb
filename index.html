@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/index-style.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-6.6.0-web/fontawesome-free-6.6.0-web/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__first">
+                <div class="container">
+
+                    <div class="header__first-navbar">
+                        <div class="mobile-menu">
+                            <button class="navbar-toggler" type="button" id="show-menu" style="border: none; color: white">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi" fill="currentColor" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>
+                                </svg>
+                              </button>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header__first-navbar-logo" style="text-align: center;">
+                                <h1 class="header__first-navbar-brand">VND</h1>
+                                <h4 class="header__first-navbar-discription">Discover Your Uniqueness</h4>
+                    </div>
+                    <ul class="header__first-navbar-list-icon">
+                            <li class="header__first-navbar-item item1" >
+                                <div href="" class="header__first-navbar-item-link" 
+                                >
+                                    <i id="searchBtn" class="header__first-navbar-icon bi bi-search"></i>
+                                    <!-- <div class="search-box " id="searchBox">
+                                        <div class="header__first-navbar-item-search-basic">
+                                            <div class="header__first-navbar-item-search-basic-link" href="">
+
+                                                <input type="text" class="header__first-navbar-item-search-basic-form-input" placeholder="Tìm kiếm">
+                                            </div>
+                                               
+                                            <a href="" class="header__first-navbar-item-link">
+                                                <i class="header__first-navbar-icon bi bi-search" style="color: var(--black-color); "></i>
+                                            </a>
+                                        </div>
+                                    </div> -->
+                                    <div class="header__first-navbar-item-search " id="searchBox">
+                                        <div class="header__first-navbar-item-search-basic">
+                                            <div class="header__first-navbar-item-search-basic-link" href="">
+
+                                                <input type="text" class="header__first-navbar-item-search-basic-form-input" placeholder="Tìm kiếm sản phẩm">
+                                            </div>
+                                               
+                                            <a href="" class="header__first-navbar-item-link">
+                                                <i class="header__first-navbar-icon bi bi-search" style="color: var(--black-color); "></i>
+                                            </a>
+                                        </div>
+                                        <div class="header__first-navbar-item-search-expand">
+                                            <form style="color: black;">
+                                                <p>Tìm kiếm nâng cao</p>
+                                                <div>
+                                                    <label style="font-size:1.3rem" class="form-label" for="catelory">Thương hiệu</label>
+                                                    <select class="form-select form-select-lg" >
+                                                        <option value="1">Gucci</option>
+                                                        <option value="2">Chanel</option>
+                                                        <option value="3">Burberry</option>
+                                                        <option value="3">Mugle</option>
+                                                        <option value="3">Tomford</option>
+                                                      </select>
+                                                </div>
+
+                                                <div>
+                                                    <label style="font-size:1.3rem" class="form-label" for="catelory">Phân loại</label>
+                                                    <select class="form-select form-select-lg" >
+                                                        <option value="1">Nước hoa nam</option>
+                                                        <option value="2">Nước hoa nữ</option>
+                                                        <option value="3">Nước hoa unisex</option>
+                                                      </select>
+                                                </div>
+
+                                                <div>
+                                                    <label style="font-size:1.3rem" class="form-label" for="catelory">Giá tiền</label>
+                                                    <select class="form-select form-select-lg" >
+                                                        <option value="1">từ 1.000.000đ đến 2.000.000đ</option>
+                                                        <option value="2">từ 2.000.000đ đến 4.000.000đ</option>
+                                                        <option value="3">trên 4.000.000đ</option>
+                                                      </select>
+                                                </div>
+
+                                                <div>
+                                                    <button type="submit" class="btn btn-danger d-flex m-auto mt-3 mb-5 btn-lg" style="font-size: 1.4rem;">Lọc </button>
+                                                </div>
+                                                
+                                            </form>  
+                                        </div>
+                                    </div>
+                                </div>  
+                            </li>
+
+                            <li class="header__first-navbar-item item2" style="border-right: 1px solid var(--white-color);">
+                                <a href="" class="header__first-navbar-item-link" >
+                                    <i class="header__first-navbar-icon bi bi-cart2"></i>
+                                </a>
+                            </li>
+                            <li class="header__first-navbar-item item3">
+                                <div href="" class="header__first-navbar-item-link">
+                                    <i class="header__first-navbar-icon bi bi-person-circle"></i>
+
+                                    <div class="header__first-navbar-item-account">
+
+                                    </div>
+                                </div>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="main-menu header__second">
+
+                <nav class="navbar navbar-expand-md bg-body-tertiary header__second-navbar">
+                    <div class="container-fluid" style="height: 100%;">
+                      <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border: none;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi" fill="currentColor" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>
+                        </svg>
+                      </button> -->
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent" style="height: 100%;">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 header__second-navbar-list" style="    margin: 0;
+    width: 100%;">
+                          <li class="nav-item header__second-navbar-item">
+                            <a class="nav-link header__second-navbar-link" aria-current="page" href="#">TRANG CHỦ</a>
+                          </li>
+                          <li class="nav-item header__second-navbar-item">
+                            <a class="nav-link header__second-navbar-link" href="#">GIỚI THIỆU</a>
+                          </li>
+                          <li class="nav-item header__second-navbar-item">
+                            <a class="header__second-navbar-link">
+                                THƯƠNG HIỆU
+                                    <i class="header__second-navbar-link-icon bi bi-chevron-compact-down"></i>
+                                    <div class="header__second-navbarsub ">
+                                        <ul>
+                                            <li>
+                                                <a href="">
+                                                    <p>Chanel</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <p>Gucci</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <p>Burberry</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <p>Tomford</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <p>Mugle</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                            </a>
+                          </li>
+                          <li class="nav-item header__second-navbar-item">
+                            <a class="header__second-navbar-link" >
+                                PHÂN LOẠI
+                                    <i class="header__second-navbar-link-icon bi bi-chevron-compact-down"></i>
+                                    <div class="header__second-navbarsub ">
+                                        <ul>
+                                            <li>
+                                                <a href="">
+                                                    <p>Nước hoa nam</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <p>Nước hoa nữ</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <p>Nước hoa unisex</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                            </a>
+                          </li>
+                          <li class="nav-item header__second-navbar-item" style="border: none">
+                            <a class="nav-link header__second-navbar-link" href="#">LIÊN HỆ</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+            </div>
+
+        </header>
+        <div class="banner">
+            <div class="slide-banner owl-carousel owl-theme">
+                <div class="item">
+                    <img src="/assets/image/perfume-Img/img.in.canva/slider3.jpg" class="banner-img"/>
+                    <!-- <div class="content">
+                        <h1>Hương Thơm Độc Đáo</h1>
+                        <h1>Phong Cách Tinh Tế</h1>
+                        <button>MUA NGAY</button>
+                    </div> -->
+                </div>
+                <div class="item">
+                    <img src="/assets/image/perfume-Img/img.in.canva/slider2.jpg" class="banner-img"/>
+                </div>
+                <div class="item">
+                    <img src="/assets/image/perfume-Img/img.in.canva/slider5.jpg" class="banner-img" />
+
+                </div>
+
+            
+            </div>
+
+        </div>
+        <div id="container">
+            <div class="grid">
+                <div class="fashsale">
+                    <div class="heading">
+                        <p>Deal chớp nhoáng, số lượng có hạn!</p>
+                        <img src="/assets/image/perfume-Img/img.in.canva/fashsale.png" alt="">
+                    </div>
+
+                    <div class="content container">
+
+                        <div class="flash-sale background">
+                            <div class="overlay"></div>
+                            <div class="countdown ">
+                                <div class="time-box">
+                                    <h3 class="number number-sm number-md number-lg" id="days">7</h3>
+                                    <h6 class=" label ">Ngày</h6>
+                                </div>
+                                <span class="separator">:</span>
+                                <div class="time-box">
+                                    <h3 class="number number-sm number-md number-lg" id="hours">7</h3>
+                                    <h6 class="label ">Giờ</h6>
+                                </div>
+                                <span class="separator">:</span>
+                                <div class="time-box">
+                                    <h3 class="number number-sm number-md number-lg" id="minutes">7</h3>
+                                    <h6 class="label ">Phút</h6>
+                                </div>
+                                <span class="separator">:</span>
+                                <div class="time-box">
+                                    <h3 class=" number number-sm number-md number-lg" id="seconds">7</h3>
+                                    <h6 class="label ">Giây</h6>
+                                </div>
+                            </div>
+                            <button class="btn  ">Xem tất cả</button>
+                        </div>
+
+                        
+                        <script src="./assets/js/index.js"></script>
+                    </div>
+                </div>
+
+                <div class="bestseller">
+                    <div class="heading">
+                        <p>Khám phá các bộ sưu tập bán chạy nhất</p>
+                        <img src="/assets/image/perfume-Img/img.in.canva/bestseller.png" alt="">
+                    </div>
+                    <div class="content container" style="padding: 20px 40px">
+                        <div class="slide-product owl-carousel owl-theme">
+                            <div class="item">
+                                <div class="description col-md-9 col-sm-7 col-lg-12 d-flex m-auto flex-column">
+                                    <div class="product-image ">
+                                        <img src="/assets/image/perfume-Img/img.in.canva/slide34-removebg-preview.png" alt="">
+                                    </div>
+                                    <p class="name">Alien Goddess</p>
+                                    <p class="price">4,200,000đ</p>
+                                    <p class="brand">Thương hiệu: Mugle</p>
+                                    <div class="btn">
+                                        <div class="button add-to-cart">Thêm vào giỏ</div>
+                                        <div class="button btn-buy">Mua ngay</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="description col-md-9 col-sm-7 col-lg-12 d-flex m-auto flex-column">
+                                    <div class="product-image ">
+                                        <img src="/assets/image/perfume-Img/img.in.canva/slide25-removebg-preview.png" alt="">
+                                    </div>
+                                    <p class="name">N°5</p>
+                                    <p class="price">5.500.000đ</p>
+                                    <p class="brand">Thương hiệu: Chanel</p>
+                                    <div class="btn">
+                                        <div class="button">Thêm vào giỏ</div>
+                                        <div class="button btn-buy">Mua ngay</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="description col-md-9 col-sm-7 col-lg-12 d-flex m-auto flex-column">
+                                    <div class="product-image " >
+                                        <img src="/assets/image/perfume-Img/img.in.canva/slide27-removebg-preview.png" alt="">
+                                    </div>
+                                    <p class="name">Coco Mademoiselle</p>
+                                    <p class="price">5.670.000đ</p>
+                                    <p class="brand">Thương hiệu: Chanel</p>
+                                    <div class="btn">
+                                        <div class="button">Thêm vào giỏ</div>
+                                        <div class="button btn-buy">Mua ngay</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="description col-md-9 col-sm-7 col-lg-12 d-flex m-auto flex-column">
+                                    <div class="product-image " >
+                                        <img src="/assets/image/perfume-Img/img.in.canva/slide6-removebg-preview.png" alt="">
+                                    </div>
+                                    <p class="name">The Voice </p>
+                                    <p class="price">9.541.800đ</p>
+                                    <p class="brand">Thương hiệu: Gucci</p>
+                                    <div class="btn">
+                                        <div class="button">Thêm vào giỏ</div>
+                                        <div class="button btn-buy">Mua ngay</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="description col-md-9 col-sm-7 col-lg-12 d-flex m-auto flex-column">
+                                    <div class="product-image " >
+                                        <img src="/assets/image/perfume-Img/img.in.canva/slide16-removebg-preview.png" alt="">
+                                    </div>
+                                    <p class="name">Her</p>
+                                    <p class="price">5.270.900đ</p>
+                                    <p class="brand">Thương hiệu: Burberry</p>
+                                    <div class="btn">
+                                        <div class="button">Thêm vào giỏ</div>
+                                        <div class="button btn-buy">Mua ngay</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="description col-md-9 col-sm-7 col-lg-12 d-flex m-auto flex-column">
+                                    <div class="product-image " >
+                                        <img src="/assets/image/perfume-Img/img.in.canva/slide29-removebg-preview.png" alt="">
+                                    </div>
+                                    <p class="name">Midnight Journey</p>
+                                    <p class="price">5.500.000đ</p>
+                                    <p class="brand">Thương hiệu: Chanel</p>
+                                    <div class="btn">
+                                        <div class="button">Thêm vào giỏ</div>
+                                        <div class="button btn-buy">Mua ngay</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="description col-md-9 col-sm-7 col-lg-12 d-flex m-auto flex-column">
+                                    <div class="product-image " >
+                                        <img src="/assets/image/perfume-Img/img.in.canva/slide11-removebg-preview.png" alt="">
+                                    </div>
+                                    <p class="name">Gucci Bloom</p>
+                                    <p class="price">4.174.400đ</p>
+                                    <p class="brand">Thương hiệu: Gucci</p>
+                                    <div class="btn">
+                                        <div class="button">Thêm vào giỏ</div>
+                                        <div class="button btn-buy">Mua ngay</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="description col-md-9 col-sm-7 col-lg-12 d-flex m-auto flex-column">
+                                    <div class="product-image " >
+                                        <img src="/assets/image/perfume-Img/img.in.canva/slide14-removebg-preview.png" alt="">
+                                    </div>
+                                    <p class="name">Burberry Goddess</p>
+                                    <p class="price">5.473.700đ</p>
+                                    <p class="brand">Thương hiệu: Burberry</p>
+                                    <div>
+                                        <div class="button">Thêm vào giỏ</div>
+                                        <div class="button btn-buy">Mua ngay</div>
+                                    </div>
+                                </div>
+                            </div><div class="item">
+                                <div class="description col-md-9 col-sm-7 col-lg-12 d-flex m-auto flex-column">
+                                    <div class="product-image " >
+                                        <img src="/assets/image/perfume-Img/img.in.canva/slide31-removebg-preview.png"  alt="">
+                                    </div>
+                                    <p class="name">Lancôme Belle Rose</p>
+                                    <p class="price">3.470.000đ</p>
+                                    <p class="brand">Thương hiệu: Lancôme</p>
+                                    <div class="btn">
+                                        <div class="button">Thêm vào giỏ</div>
+                                        <div class="button btn-buy">Mua ngay</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="allproduct"></div>
+
+                <div class="aboutus container">
+                    <div class="row">
+                        <div class="col col-lg-3 d-md-block d-none">
+                            <div>
+
+                                <img class="image object-fit-md-contain" src="/assets/image/perfume-Img/img.in.canva/intro1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="heading">
+                                <p style="font-size: 1.4rem; color: gray;">VND PERFUMES</p>
+                                <img src="/assets/image/perfume-Img/img.in.canva/aboutus.png" alt="">
+                            </div>
+                            <div class="description">
+                                <p>VND là thương hiệu nước hoa cao cấp, nơi hội tụ những hương thơm tinh tế và khác biệt. Mỗi chai nước hoa là một tuyệt tác nghệ thuật, kết tinh từ những nguyên liệu quý giá, mang đến dấu ấn độc đáo, sang trọng. <br>
+    
+                                    VND không chỉ tôn vinh phong cách cá nhân, mà còn khơi gợi cảm xúc, giúp bạn tự tin tỏa sáng trong mọi khoảnh khắc</p>
+                            </div>
+                            <div style="text-align: center;">
+
+                                <button>Khám phá</button>
+                            </div>
+                        </div>
+                        <div class="col col-lg-3 d-md-block d-none" style="align-self: end;" >
+
+                            <div>
+                                <img class="image object-fit-md-contain" src="/assets/image/perfume-Img/img.in.canva/intro2.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="introduce">
+                    <div class="heading">
+                        <div class="heading1">
+                            <p>TẠO DẤU ẤN CỦA RIÊNG BẠN</p>
+                        </div>
+                        <div class="heading2">
+                            <p>KHÁM PHÁ THẾ GIỚI MÙI HƯƠNG ĐA DẠNG</p>
+                        </div>
+                    </div>
+                    <div class="container content">
+                        <div class="row">
+                            <div class=" col-sm-4 d-none d-lg-block ">
+                                <img src="/assets/image/perfume-Img/img.in.canva/introduce.jpg" style="width: 100%; height: 450px;"/>
+                            </div>
+                            <div class="col-xs-12  col-md-8">
+                                <div class="text">
+                                    <ul>
+                                        <li class="mb-4">
+                                            <div class="background">
+        
+                                                <img class=" img1" src="/assets/image/perfume-Img/img.in.canva/farm-icon1.png" alt="">
+                                            </div>
+                                            <div class="description">
+                                                <p class="heading1">Tạo ấn tượng cá nhân</p>
+                                                <p class="heading2">Nước hoa là một phần quan trọng trong việc tạo dấu ấn cá nhân. Một mùi hương đặc biệt có thể nói lên về cái tôi, phong cách và cá nhân của bạn</p>
+                                            </div>
+                                        </li>
+                                        <li class="mb-4">
+                                            <div class="background">
+        
+                                                <img class=" img2" src="/assets/image/perfume-Img/img.in.canva/farm-icon2.png" alt="">
+                                            </div>
+                                            <div class="description">
+                                                <p class="heading1">Tự tin và sự thu hút</p>
+                                                <p class="heading2">Một mùi hương thích hợp không chỉ khiến bạn cảm thấy tươi mới và thoải mái mà còn giúp bạn tự tin hơn trong giao tiếp và tương tác xã hội.</p>
+                                            </div>
+                                        </li>
+                                        <li class="mb-4">
+                                            <div class="background">
+        
+                                                <img class=" img3" src="/assets/image/perfume-Img/img.in.canva/farm-icon3.png" alt="">
+                                            </div>
+                                            <div class="description">
+                                                <p class="heading1">Kỹ thuật pha chế và chất lượng cao</p>
+                                                <p class="heading2">Sản phẩm nước hoa thường được chế tạo từ các thành phần tự nhiên và hợp chất hương liệu cao cấp</p>
+                                            </div>
+                                        </li>
+                                        <li class="mb-4">
+                                            <div class="background">
+        
+                                                <img class=" img4" src="/assets/image/perfume-Img/img.in.canva/farm-icon4.png" alt="">
+                                            </div>
+                                            <div class="description">
+                                                <p class="heading1">Tạo không gian và cảm xúc</p>
+                                                <p class="heading2">Hương thơm có thể tạo ra một bầu không khí khác biệt và mang đến cảm giác thư giãn, sảng khoái hoặc lãng mạn.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                
+                <!-- <div class="brandname">
+                    <div class="box box1">
+                        <img src="/assets/image/perfume-Img/img.in.canva/trademark1.jpg" alt="">
+                    </div>
+                    <div class="box box2">
+                        <img src="/assets/image/perfume-Img/img.in.canva/trademark2.jpg" alt="">
+                    </div>
+                    <div class="box box3">
+                        <img src="/assets/image/perfume-Img/img.in.canva/trademark3.jpg" alt="">
+                    </div>
+                    <div class="box box4">
+                        <img src="/assets/image/perfume-Img/img.in.canva/trademark4.jpg" alt="">
+                    </div>
+                    <div class="box box5">
+                        <img src="/assets/image/perfume-Img/img.in.canva/trademark5.jpg" alt="">
+                    </div>
+                </div> -->
+            </div>
+        </div> 
+        <footer id="footer">
+                <div class="container">
+                    <div class="row row-cols-lg-4 row-cols-md-2 row-cols-sm-1">
+
+                        <div class="info col col-lg-5 col-md-6 col-sm-12">
+                            <ul>
+                                <li style="text-align: center; min-width: 300px;">
+                                    <h1 
+                                    class="header__first-navbar-brand"
+                                    style="    margin:0;line-height: 25px;
+                                    font-size: 34px;">VND</h1>
+                                    <h4 class="header__first-navbar-discription" 
+                                    style="line-height: 45px;">Discover Your Uniqueness</h4>
+                                </li>
+                                <li class="item">
+                                    <p>Địa chỉ: 273 Đ. An Dương Vương,P.3, Q.5, 
+                                        TP.HCM</p>
+                                </li>
+                                <li class="item">
+                                    <p>SĐT: (+84) 0123-456-789</p>
+                                </li>
+                                <li class="item">
+                                    <p>Email: btapweb-ud@gmail.com</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="discover col col-lg-auto col-md-6 col-sm-12">
+                            <ul>
+                                <li>
+                                    <p class="heading">KHÁM PHÁ</p>
+                                </li>
+                                <li>
+                                    <p>Trang chủ</p>
+                                </li>
+                                <li>
+                                    <p>Giới thiệu</p>
+                                </li>
+                                <li>
+                                    <p>Thương hiệu</p>
+                                </li>
+                                <li>
+                                    <p>Phân loại</p>
+                                </li>
+                                <li>
+                                    <p>Liên hệ</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="support col col-lg-auto col-md-6 col-sm-12">
+                            <ul>
+                                <li>
+                                    <p class="heading">HỖ TRỢ</p>
+                                </li>
+                                <li>
+                                    <p>Tìm kiếm</p>
+                                </li>
+                                <li>
+                                    <p>Đăng kí</p>
+                                </li>
+                                <li>
+                                    <p>Đăng nhập</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="contact col col-lg-2 col-md-6 col-sm-12">
+                            
+                            <ul>
+                                <div class="box">
+
+                                    <li >
+                                        <p class="heading">LIÊN HỆ</p>
+                                    </li>
+                
+                                    <li class="list">
+                
+                                        <div>
+                                            <i class="bi bi-facebook"></i>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-instagram"></i>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-tiktok"></i>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-geo-alt"></i>
+                                        </div>
+                                    </li>
+
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        </footer>
+
+        <div class="account container-xxl">
+            <div class="overlay"></div>
+            <div class="account-user collapse-box" id="navbarSupportedContent" aria-labelledby="bdSidebarOffcanvasLabel">
+                <div class="container " >
+
+                    <div class="header-box" style="border-bottom: 1px solid gray;">
+                        <h3 class="heading" id="bdSidebarOffcanvasLabel" style="line-height: 40px; color: black;">Menu</h3>
+                        <button type="bt" class="btn-close" id="close-menu"></button>
+                    </div>
+                    <ul>
+                        <li>
+                            
+                        </li>
+                        <li>
+                            <a href="">Trang chủ</a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Giới thiệu
+                            </a>
+                        </li>
+                        <li class="item">
+                            <div class="dropdown">
+                                <a class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Thương hiệu
+                                </a>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">Gucci</a></li>
+                                  <li><a class="dropdown-item" href="#">Chanel</a></li>
+                                  <li><a class="dropdown-item" href="#">Burberry</a></li>
+                                  <li><a class="dropdown-item" href="#">Mugle</a></li>
+                                  <li><a class="dropdown-item" href="#">Tomford</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="dropdown">
+                                <a class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Phân loại
+                                </a>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">Nước hoa nam</a></li>
+                                  <li><a class="dropdown-item" href="#">Nước hoa nữ</a></li>
+                                  <li><a class="dropdown-item" href="#">Nước hoa unisex</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="">
+                                Liên hệ
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+     <script>
+
+        $('.slide-product').owlCarousel({
+            loop:true,
+            margin:10,
+            responsiveClass:true,
+            nav: true,
+            dots: false,
+            responsive:{
+                400:{
+                    items:1,
+                },
+                700:{
+                    items:2,
+                },
+                1000:{
+                    items:5
+                }
+            }
+        })
+
+        $('.slide-banner').owlCarousel({
+            loop:true,
+            margin:10,
+            responsiveClass:true,
+            autoplay: true,
+            responsive:{
+                0:{
+                    items:1
+                }
+            }
+        });
+        $('#close-menu').click(function() {
+            $('.account').hide();
+        })
+        $('#show-menu').click(function() {
+            $('.account').show();
+        })
+
+        // Function o page login
+        // 1. Gan co dinh username vs password
+            //const username='admin';
+            //const password='123';
+        // 2. Khi user nhap username,password va submit -> kiem tra input username,password voi 2 bien tren
+        // 2.1. Neu dung voi username,password thi gan' vao auth va redirect ve trang chu
+                //localStorage.setItem('auth', JSON.stringify({username: 'admin'}));
+                // window.location.replace("/");
+        // 2.2 Neu sai -> bao loi
+
+        const authUser = localStorage.getItem('auth');
+        console.log('authUser=', authUser)
+        $('.add-to-cart').click(function() {
+            if(authUser) {
+                //window.location.replace("http://www.w3schools.com"); vao trang gio hang
+            } else {
+                //window.location.replace("http://www.w3schools.com"); vao trang login
+            }
+        })
+
+        $('.btn-buy').click(function() {
+            if(authUser) {
+                //window.location.replace("http://www.w3schools.com"); vao trang gio hang
+            } else {
+                //window.location.replace("http://www.w3schools.com"); vao trang login
+            }
+        })
+
+
+
+
+        document.getElementById('searchBtn').addEventListener('click', function() {
+            const searchBox = document.getElementById('searchBox');
+            if (searchBox.style.display === 'none' || searchBox.style.display === '') {
+                searchBox.style.display = 'block'; // Hiện box
+            } else {
+                searchBox.style.display = 'none'; // Ẩn box
+            }
+        });
+   </script>
+</body>
+</html>

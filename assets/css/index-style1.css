@@ -1,0 +1,94 @@
+.banner {
+    background-image: url("/assets/image/perfume-Img/img.in.canva/banner2.jpg");
+    width: 100%;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.banner__content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+    transform: translateY(-50%);
+    margin-left: 50%;
+    transform: translateX(-10%);
+}
+
+.banner__content-heading {
+    margin-top: 0px;
+    color: var(--white-color);
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.banner__content-button {
+    width: 150px;
+    height: 40px;
+    font-size: 1.6rem;
+    margin-top: 30px;
+    /* margin-left: 150px; */
+    border: 1px solid white;
+    border-radius: 5px;
+    color: var(--white-color);
+    background: black;
+    cursor: pointer;
+}
+
+.banner__content-button:hover {
+    background-color: var(--yellow-color);   
+}
+
+.banner__change-btn {
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    background-color: transparent;
+    display: flex;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px;
+}
+
+.btn {
+    width: 10px;
+    height: 10px;
+    background-color: var(--gray-color);
+    border-radius: 50%; 
+    margin-left: 20px;
+}
+
+.content__fashsale {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.content__fashsale-background-btn {
+    width: 150px;
+    height: 40px;
+    font-size: 1.6rem;
+    margin-top: 30px;
+    /* margin-left: 150px; */
+    border: 1px solid white;
+    border-radius: 5px;
+    color: var(--white-color);
+    background: black;
+    cursor: pointer;
+}
+
+.content__fashsale-background-btn:hover {
+    background-color: var(--yellow-color);
+}
+
+.content__fashsale-background {
+    background-image: url("/assets/image/perfume-Img/img.in.canva/background1.jpg");
+    height: 400px;
+    width: 100%;
+}

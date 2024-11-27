@@ -1,0 +1,447 @@
+.banner {
+    margin-top: 80px;
+}
+.banner,
+.banner .item .banner-img{
+    height: 100%;
+}
+
+.banner .content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.slide-banner{
+    position: relative;
+}
+.slide-banner .owl-dots{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;   
+}
+
+
+
+
+
+
+
+/* Phan noi dung */
+
+#container {
+}
+
+.fashsale {
+    
+}
+
+.aboutus .heading,
+.fashsale .heading,
+.bestseller .heading {
+    text-align: center;
+}
+
+.aboutus .heading p,
+.fashsale .heading p,
+.bestseller .heading p {
+    font-size: 1.8rem;
+    margin: 0;
+    padding: 16px 0 0 0;
+    line-height: 34px;
+    font-weight: 300;
+}
+
+.fashsale .description {
+    min-width: 400px;
+}
+
+.fashsale .content {
+    padding-top: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.fashsale .content .background {
+    padding-top: 50%;
+    background:  url(/assets/image/perfume-Img/img.in.canva/fashsale-background.jpg) top center / cover no-repeat;
+    /* filter: blur(2px); */
+    position: relative;
+}
+
+.fashsale .content .background .overlay {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.fashsale .content  .countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    z-index: 6;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.fashsale .content  .countdown .time-box {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid #fff;
+    /* padding: 14px 24px; */
+    border-radius: 8px;
+    width: 8%;
+    height: 19%;
+}
+
+.time-box .number  {
+    font-weight: bold;
+    color: white;
+    /* font-size: 20px; */
+    margin: 10px 0 0;
+    min-height: 28px;
+    display: flex
+;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.time-box .label {
+    color: white;
+    text-transform: capitalize;
+    display: block;
+  }
+
+  .time-box h6 {
+    font-weight: 300;
+  }
+  
+.separator {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+  }
+
+.fashsale .content .btn {
+    bottom: 20%;
+    left: 45%;
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 300;
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 8px;
+    z-index: 6;
+    position: absolute;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #000;
+  } 
+
+.bestseller {
+    
+}
+
+.bestseller .content {
+    display: flex;
+    align-items: center;
+}
+
+
+.bestseller .content .item p {
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin: 0;
+    padding: 4px;
+}
+
+.bestseller .content .item .name {
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.bestseller .content .item .price {
+    color: brown;
+}
+
+.bestseller .content .item .brand {
+    color: gray;
+}
+
+.bestseller .content .box {
+    background-color: var(--white-color);
+}
+
+.bestseller .content .product-image img{
+    /* width: 100%; */
+    width: cal(220px/2);
+    height: 220px;
+    object-fit: cover;
+    
+}
+
+.bestseller .btn{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* padding: 0; */
+}
+
+.bestseller .btn .button {
+    border: 1px solid gray;
+    border-radius: 3px;
+    padding: 4px 8px;
+    background-color: white;
+    font-size: 1.3rem;
+}
+
+.bestseller .btn .btn-buy {
+    color: brown;
+    border: 1px solid brown;
+
+}
+
+.bestseller .btn-buy:hover {
+    background-color: brown;
+    color: white;
+}
+
+.bestseller .btn-buy:active {
+    background-color: rgb(167, 80, 80);
+    color: white;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover{
+    background-color: transparent !important;
+    color: #333
+}
+/* .owl-item.active {
+    margin-right: 22px !important;
+} */
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot{
+    font-size: 60px !important;
+}
+.owl-nav{
+    position: relative;
+}
+.owl-prev{
+    font-size: 60px !important;
+    position: absolute;
+    top: -240px;
+    left: -20px;
+}
+.owl-next{
+    font-size: 60px !important;
+    position: absolute;
+    top: -240px;
+    right: -20px;
+}
+
+.allproduct {
+
+}
+
+.aboutus {
+    width: 100%;
+    height: 380px;
+    display: flex;
+    
+}
+
+.aboutus .content {
+    flex: 1;
+    padding: 10px 16px 0px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.aboutus .content .description p {
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* .aboutus .content .btn {
+    text-align: center;
+    padding-top: 10px;
+} */
+
+.aboutus .content button {
+    border: 1px gray solid;
+    color: gray;
+    font-size: 1.4rem;
+    width: 100px;
+    height: 40px;
+    font-weight: 300;
+    background: var(--white-color);
+    border-radius: 3px;
+    outline: none;
+}
+
+.aboutus .content button:hover {
+    color: white;
+    background-color: brown;
+}
+
+.aboutus .content button:active {
+    background-color: rgb(165, 68, 68);
+}
+
+.aboutus .image {
+    width:100% ;
+    height: 100%;
+}
+
+/* .aboutus .img1 {
+    background: url(/assets/image/perfume-Img/img.in.canva/intro1.png) top center / cover no-repeat;
+}
+
+.aboutus .img2 {
+    align-self: flex-end;
+    background: url(/assets/image/perfume-Img/img.in.canva/intro2.jpg) top center / cover no-repeat;
+} */
+
+.introduce .heading {
+    text-align: center;
+    padding-top: 38px;
+}
+
+.introduce .heading .heading1 p {
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: gray;
+    margin: 0;
+    line-height: 22px;
+}
+
+.introduce .heading .heading2 p {
+    margin: 0;
+    font-size: 2rem;
+    line-height: 24px;
+} 
+
+.introduce .content {
+    padding-top: 30px;
+    display: flex;
+}
+
+.introduce .content .img {
+    width: 400px;
+    height: 450px;
+    background: url(/assets/image/perfume-Img/img.in.canva/introduce.jpg) center / cover no-repeat;
+    
+}
+
+.introduce .content .text {
+    height: 100%;
+}
+
+.introduce .content .text ul {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    padding-left: 65px;
+    margin: 0;
+}
+
+.introduce .content .text li {
+    display: flex;
+    min-height: 88px;
+    justify-content: space-between;
+}
+
+.introduce .content .text .description {
+    /* width: 600px; */
+    flex: 1;
+    padding-left: 25px;
+}
+
+.introduce .content .text .heading1 {
+    margin: 0;
+    font-size: 1.8rem;
+    line-height: 22px;
+    font-weight: 400;
+}
+
+.introduce .content .text .heading2 {
+    margin: 0;
+    line-height: 22px;
+    font-size: 1.4rem;
+}
+
+.introduce .content .text .background {
+    width: 70px; 
+    height: 70px; 
+    border-radius: 50%; 
+    background-color: black; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.introduce .content .text .img1,
+.introduce .content .text .img2,
+.introduce .content .text .img3,
+.introduce .content .text .img4 {
+    width: 50px; 
+    height: auto;
+}
+
+    
+.brandname {
+    display: flex;
+    padding-top: 30px;
+    background-color: white;
+    justify-content: space-around;
+}
+
+.brandname .box1 img {
+    height: 90px;
+    width: auto;
+} 
+
+.brandname .box2 img {
+    height: 90px;
+    width: auto;
+} 
+
+.brandname .box3 img {
+    height: 90px;
+    width: auto;
+} 
+
+.brandname .box4 img {
+    height: 90px;
+    width: auto;
+} 
+
+.brandname .box5 img {
+    height: 90px;
+    width: auto;
+} 
+
+
+
+
+
+
