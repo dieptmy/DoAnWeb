@@ -66,7 +66,7 @@
 
 .fashsale .content .background {
     padding-top: 50%;
-    background:  url(/assets/image/perfume-Img/img.in.canva/fashsale-background.jpg) top center / cover no-repeat;
+    background:  url('/assets/image/perfume-Img/img.in.canva/fashsale-background.jpg') top center / cover no-repeat;
     /* filter: blur(2px); */
     position: relative;
 }
@@ -310,14 +310,9 @@
     height: 100%;
 }
 
-/* .aboutus .img1 {
-    background: url(/assets/image/perfume-Img/img.in.canva/intro1.png) top center / cover no-repeat;
-}
 
-.aboutus .img2 {
-    align-self: flex-end;
-    background: url(/assets/image/perfume-Img/img.in.canva/intro2.jpg) top center / cover no-repeat;
-} */
+
+
 
 .introduce .heading {
     text-align: center;
@@ -346,7 +341,7 @@
 .introduce .content .img {
     width: 400px;
     height: 450px;
-    background: url(/assets/image/perfume-Img/img.in.canva/introduce.jpg) center / cover no-repeat;
+    background: url(assets\image\perfume-Img\img.in.canva\introduce.jpg) center / cover no-repeat;
     
 }
 
