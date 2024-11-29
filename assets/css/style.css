@@ -413,7 +413,7 @@
     }
 }
 
-#footer {
+/* #footer {
     width: 100%;
     height: auto;
     margin-top: 40px;
@@ -444,7 +444,7 @@
 
 #footer .container .info {
     /* min-height: 160px; */
-}
+/* }
 
 #footer .container .info .item {
     text-align: center;
@@ -503,4 +503,40 @@
     font-size: 1.4rem;
     margin: 0;
     line-height: 26px;
+} */ 
+
+.footer {
+    background-color: black;
+    color: white;
+    padding: 60px 40px;
+    margin-top: 40px;
 }
+
+.footer .text-item {
+    font-size: 1.4rem;
+    padding: 0;
+    line-height: 26px;
+}
+
+.footer .h3 {
+    font-size: 2rem;
+    
+}
+
+.footer .text-logo {
+    font-size: 2.8rem;
+}
+
+.footer .text-description {
+    font-size: 1.6rem;
+}
+
+.footer i {
+    font-size: 20px;
+}
+
+.footer .col-item {
+    padding: 20px 0;
+    text-align: center;
+}
+

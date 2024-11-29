@@ -1,5 +1,6 @@
 .banner {
     margin-top: 80px;
+    width: 100%;
 }
 .banner,
 .banner .item .banner-img{
@@ -66,7 +67,7 @@
 
 .fashsale .content .background {
     padding-top: 50%;
-    background:  url('/assets/image/perfume-Img/img.in.canva/fashsale-background.jpg') top center / cover no-repeat;
+    background:  url("../image/perfume-Img/img.in.canva/fashsale-background.jpg") top center / cover no-repeat;
     /* filter: blur(2px); */
     position: relative;
 }
@@ -148,10 +149,14 @@
     transition: all 0.3s ease;
 }
 
-.btn:hover {
-    background-color: #fff;
+.fashsale .content .btn:hover {
+    background-color: white;
     color: #000;
   } 
+
+  .fashsale .content .btn:active {
+    background-color: #333;
+  }
 
 .bestseller {
     
@@ -195,22 +200,33 @@
     
 }
 
-.bestseller .btn{
+.bestseller .btnbox{
     width: 100%;
     display: flex;
     justify-content: space-between;
     /* padding: 0; */
 }
 
-.bestseller .btn .button {
+.bestseller .btnbox .button {
     border: 1px solid gray;
     border-radius: 3px;
     padding: 4px 8px;
     background-color: white;
     font-size: 1.3rem;
+    cursor: pointer;
 }
 
-.bestseller .btn .btn-buy {
+.bestseller .btnbox .add-to-cart:hover {
+    color: white;
+    background-color: gray;
+}
+
+.bestseller .btnbox .add-to-cart:active {
+    color: white;
+    background-color: rgb(155, 153, 153);
+}
+
+.bestseller .btnbox .btn-buy {
     color: brown;
     border: 1px solid brown;
 
@@ -310,9 +326,14 @@
     height: 100%;
 }
 
+/* .aboutus .img1 {
+    background: url(/assets/image/perfume-Img/img.in.canva/intro1.png) top center / cover no-repeat;
+}
 
-
-
+.aboutus .img2 {
+    align-self: flex-end;
+    background: url(/assets/image/perfume-Img/img.in.canva/intro2.jpg) top center / cover no-repeat;
+} */
 
 .introduce .heading {
     text-align: center;
@@ -341,7 +362,7 @@
 .introduce .content .img {
     width: 400px;
     height: 450px;
-    background: url(assets\image\perfume-Img\img.in.canva\introduce.jpg) center / cover no-repeat;
+    background: url(/assets/image/perfume-Img/img.in.canva/introduce.jpg) center / cover no-repeat;
     
 }
 
@@ -436,7 +457,58 @@
 } 
 
 
+/* box tai khoan khach hang */
 
+.header__first-navbar-item-account {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    background-color: white;
+    top: 52px;
+    right: 0;
+    z-index: 101;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    
+}
 
+.header__first-navbar-item-account::before {
+    content: "";
+    border-width: 18px 24px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+    position: absolute;
+    top: -30px;
+    right: -2px;
+}
 
+.had-account {
+    display: none;
+}
+
+.no-account {
+    display: none;
+}
+
+.header__first-navbar-item-account .ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding:10px;
+}
+
+.header__first-navbar-item-account ul li {
+    display: flex;
+    color: black;
+
+}
+
+.header__first-navbar-item-account li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.4rem;
+}
+
+.header__first-navbar-icon {
+    position: relative;
+}
 
